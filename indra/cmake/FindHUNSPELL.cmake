@@ -7,10 +7,10 @@
 #  HUNSPELL_FOUND, If false, do not try to use HUNSPELL.
 
 find_path(HUNSPELL_INCLUDE_DIR hunspell.h
-  PATH_SUFFIXES hunspell
+/usr/include/hunspell
   )
 
-set(HUNSPELL_NAMES ${HUNSPELL_NAMES} hunspell-1.4 libhunspell-1.3 libhunspell)
+set(HUNSPELL_NAMES ${HUNSPELL_NAMES} hunspell-1.7 hunspell-1.4 libhunspell-1.3 libhunspell)
 find_library(HUNSPELL_LIBRARY
   NAMES ${HUNSPELL_NAMES}
   )
